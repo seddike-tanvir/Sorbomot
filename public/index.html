@@ -8,21 +8,49 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="./assets/css/fonts.css">
 </head>
-<body>
+<body class="font-poppins duration-[.4s]">
     <header class="header_container bg-white flex flex-col w-[100%] max-w-[1480px] m-auto h-auto justify-center py-[1.2rem] px-[2rem]">
             <div class="navbar_logoarea flex flex-col items-center gap-4 mt-[10vh]">
-                <p class="navbar_logo_txt font-anek-bangla text-[5rem] h-auto text-green-700 text-center font-extrabold leading-6">সর্বমোট</p>
+                <p class="navbar_logo_txt font-anek-bangla text-[4.5rem] h-auto text-green-700 text-center font-extrabold leading-6">সর্বমোট</p>
             </div>
     </header>
 
 
+    <main class="mt-[10vh] w-[95%] mw-[30rem] flex flex-col gap-[5vh] justify-self-center ">
+        <div class="flex flex-wrap gap-8 w-[100%] justify-self-center justify-center">
+            <div class="flex flex-col max-w-[25rem] justify-self-center">
+                <label for="mainAmount">Enter target amount &nbsp;👇</label>
+                <input type="text" name="" id="mainAmount" class="px-4 py-1 rounded-sm border-[1px] focus:border-green-500 focus:ring-2 focus:ring-green-200 outline-none">
+            </div>
+            <div class="flex flex-col max-w-[25rem] justify-self-center">
+                <label for="percentage">Enter percentage % &nbsp;👇</label>
+                <input type="text" name="" id="percentage" class="px-4 py-1 rounded-sm border-[1px] focus:border-green-500 focus:ring-2 focus:ring-green-200 outline-none">
+            </div>
+        </div>
+
+        <div class="flex flex-wrap justify-self-center justify-center my-0 " id="calculateBtnArea">
+            <button id="calculateBtn" class="cursor-pointer hover:bg-green-600 px-4 py-1 rounded-sm border-[1px] border-green-500 bg-green-500 text-gray-100 font-semibold text-[1rem] duration-[.2s]">Calculate</button>
+        </div>
+
+        <div class="w-[90%] mx-auto flex-col gap-[5vh] mt-[5vh] items-center hidden" id="outputArea">
+            <p class="font-semibold text-[1.2rem] text-center  ">Total amount included the percentage is <span id="totalAmountShower" class="px-[4px] py-[1px] rounded-sm bg-green-300 font-extrabold "></span> .</p>
+            <button id="refreshBtn" class="cursor-pointer hover:bg-gray-700 px-4 py-1 w-max rounded-sm border-[1px] border-gray-700 bg-gray-600 text-gray-200 font-semibold text-[1rem] duration-[.2s]">Refresh</button>
+        </div>
+
+
+
+    </main>
+
+
     
-    <footer class="footerArea flex flex-col w-[100%] m-auto h-auto justify-between py-[2rem] px-[2rem] pb-[2.5rem]">
+    <footer class="footerArea flex flex-col w-[100%] m-auto mt-[15vh] h-auto justify-between py-[2rem] px-[2rem] pb-[2.5rem]">
         <div class="footer_banner_creditArea flex flex-col text-center text-gray-500 mt-[10vh]">
-                <!-- <p class="credit text-center text-gray-500">This UI design is provided by <span>Team Programing hero</span>.&nbsp; From <a class="links underline transition-[.6s] hover:text-gray-400 hover:no-underline" href="../emergency-Hotline.pdf" title="Design sample from Programming Hero">design</a>, this page was developed by <span><a class="links underline transition-[.6s] hover:text-gray-400 hover:no-underline" href="https://tanvirseddike.web.app" title="Go to Seddike's Profile">Seddike Tanvir</a></span>.</p> -->
-                <p class="copyright text-center">&copy; 2025 Sorbomot.&nbsp; All Rights Reserved.</p>
+                <p class="copyright text-center text-[.9rem]">&copy; 2025 <span><a class="transition-[.6s] hover:text-gray-400 hover:no-underline" href="https://sorbomot--smsportfolio.pages.dev/" title="https://sorbomot--smsportfolio.pages.dev/">Sorbomot</a></span>.&nbsp; All Rights Reserved to <span><a class="transition-[.6s] hover:text-gray-400 hover:no-underline" href="https://tanvirseddike.web.app" title="Go to Seddike's Profile">Seddike Tanvir</a></span>.</p>
         </div>
     </footer>
+
+
+    <script src="./assets/js/calculateFunction.js"></script>
     
 </body>
 </html>

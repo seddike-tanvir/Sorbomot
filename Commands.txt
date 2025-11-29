@@ -6,10 +6,10 @@ git init
 git add -A
 git commit -m "Commited by SM"
 git branch -M main
-git remote add origin https://github.com/seddike-tanvir/Shorbomot.git
+git remote add origin https://github.com/seddike-tanvir/Sorbomot.git
 git push -u origin main --force
 
-git pull https://github.com/seddike-tanvir/seddiketanvir.com main
+git pull https://github.com/seddike-tanvir/Sorbomot main
 
 ---------------
 
