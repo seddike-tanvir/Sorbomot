@@ -10,7 +10,7 @@ This project is designed with a simple UI, smooth interactions, and reliable cal
 
 ## 🚀 Live Demo
 
-👉 https://sorbomot.pages.dev/
+👉 https://sorbomot.pages.dev/   or,   https://sorbomot--smsportfolio.pages.dev/
 
 ---
 
